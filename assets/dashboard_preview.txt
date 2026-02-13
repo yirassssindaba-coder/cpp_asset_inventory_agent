@@ -1,0 +1,13 @@
+ASSET INVENTORY DASHBOARD (preview)
+------------------------------------------------------------
+Asset ID         Hostname     OS                     Last Seen (UTC)
+asset-deadbeef   roberto-PC   Windows 10 (build...)  2026-02-13T06:23:12Z
+asset-acde1234   lab-01       Ubuntu 22.04           2026-02-13T06:22:01Z
+
+Columns:
+- CPU model (cores)
+- RAM total (MB)
+- Disk (mount:total/free)
+
+Export:
+- /export.csv

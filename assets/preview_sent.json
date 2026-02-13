@@ -1,0 +1,22 @@
+{
+  "asset_id": "asset-deadbeef",
+  "hostname": "roberto-PC",
+  "os": "Windows 10 (build 19045)",
+  "cpu_model": "Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz",
+  "cpu_cores": 8,
+  "ram_total_mb": 8192,
+  "disks": [
+    {
+      "mount": "C:\\",
+      "total_gb": 237,
+      "free_gb": 58
+    },
+    {
+      "mount": "D:\\",
+      "total_gb": 931,
+      "free_gb": 402
+    }
+  ],
+  "timestamp_utc": "2026-02-13T06:23:12Z",
+  "agent_version": "1.0.0"
+}

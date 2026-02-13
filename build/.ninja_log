@@ -1,0 +1,8 @@
+# ninja log v7
+11	2353	7926679761849129	CMakeFiles/asset_agent.dir/src/agent_main.cpp.obj	beb83c3e89e2adac
+25	2897	7926679761977529	CMakeFiles/asset_agent.dir/src/inventory.cpp.obj	353fb529fcaede3a
+2899	5008	7926679790718147	CMakeFiles/asset_agent.dir/src/mini_json.cpp.obj	9b3123c76d9983d9
+2522	5988	7926679788098140	CMakeFiles/asset_agent.dir/src/http_client.cpp.obj	fcd08ca40ab8a80f
+5009	6808	7926679811801542	CMakeFiles/asset_agent.dir/src/logger.cpp.obj	8bc9644e1241d404
+6809	7501	7926679829831146	CMakeFiles/asset_server.dir/src/server_main.cpp.obj	37ce17f3eac6015d
+7501	10618	7926679836759708	CMakeFiles/asset_server.dir/src/http_server.cpp.obj	d9f9291d35cb5615

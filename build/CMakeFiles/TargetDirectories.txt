@@ -1,0 +1,4 @@
+C:/Users/ASUS/Desktop/proyek/cpp_asset_inventory_agent/build/CMakeFiles/asset_agent.dir
+C:/Users/ASUS/Desktop/proyek/cpp_asset_inventory_agent/build/CMakeFiles/asset_server.dir
+C:/Users/ASUS/Desktop/proyek/cpp_asset_inventory_agent/build/CMakeFiles/edit_cache.dir
+C:/Users/ASUS/Desktop/proyek/cpp_asset_inventory_agent/build/CMakeFiles/rebuild_cache.dir
