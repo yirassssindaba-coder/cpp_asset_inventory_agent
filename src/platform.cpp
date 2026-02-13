@@ -6,6 +6,12 @@
 #include <fstream>
 #include <cstring>
 
+#if defined(_MSC_VER)
+  #include <intrin.h>
+#elif defined(__GNUC__) && (defined(__i386__) || defined(__x86_64__))
+  #include <cpuid.h>
+#endif
+
 #ifdef _WIN32
   #ifndef WIN32_LEAN_AND_MEAN
     #define WIN32_LEAN_AND_MEAN
@@ -70,11 +76,21 @@ static std::string cpu_brand_x86() {
 #if defined(__x86_64__) || defined(_M_X64) || defined(__i386) || defined(_M_IX86)
     unsigned int regs[4]{0,0,0,0};
     auto cpuid = [&](unsigned int leaf, unsigned int subleaf) {
-#ifdef _WIN32
+#if defined(_WIN32)
+        #if defined(_MSC_VER)
         int r[4];
         __cpuidex(r, (int)leaf, (int)subleaf);
         regs[0]= (unsigned int)r[0]; regs[1]=(unsigned int)r[1]; regs[2]=(unsigned int)r[2]; regs[3]=(unsigned int)r[3];
-#else
+        #elif defined(__GNUC__) && (defined(__i386__) || defined(__x86_64__))
+        unsigned int a,b,c,d;
+        __cpuid_count(leaf, subleaf, a,b,c,d);
+        regs[0]=a; regs[1]=b; regs[2]=c; regs[3]=d;
+        #else
+        unsigned int a,b,c,d;
+        __asm__ __volatile__("cpuid":"=a"(a),"=b"(b),"=c"(c),"=d"(d):"a"(leaf),"c"(subleaf));
+        regs[0]=a; regs[1]=b; regs[2]=c; regs[3]=d;
+        #endif
+        #else
         unsigned int a,b,c,d;
         __asm__ __volatile__("cpuid":"=a"(a),"=b"(b),"=c"(c),"=d"(d):"a"(leaf),"c"(subleaf));
         regs[0]=a; regs[1]=b; regs[2]=c; regs[3]=d;
@@ -196,3 +212,5 @@ std::string now_iso_utc() {
 }
 
 } // namespace platforminfo
+
+

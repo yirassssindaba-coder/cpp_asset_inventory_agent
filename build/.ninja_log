@@ -1,8 +1,15 @@
 # ninja log v7
-11	2353	7926679761849129	CMakeFiles/asset_agent.dir/src/agent_main.cpp.obj	beb83c3e89e2adac
-25	2897	7926679761977529	CMakeFiles/asset_agent.dir/src/inventory.cpp.obj	353fb529fcaede3a
-2899	5008	7926679790718147	CMakeFiles/asset_agent.dir/src/mini_json.cpp.obj	9b3123c76d9983d9
-2522	5988	7926679788098140	CMakeFiles/asset_agent.dir/src/http_client.cpp.obj	fcd08ca40ab8a80f
-5009	6808	7926679811801542	CMakeFiles/asset_agent.dir/src/logger.cpp.obj	8bc9644e1241d404
-6809	7501	7926679829831146	CMakeFiles/asset_server.dir/src/server_main.cpp.obj	37ce17f3eac6015d
-7501	10618	7926679836759708	CMakeFiles/asset_server.dir/src/http_server.cpp.obj	d9f9291d35cb5615
+11	1297	7926697722749323	CMakeFiles/asset_agent.dir/src/agent_main.cpp.obj	beb83c3e89e2adac
+21	1851	7926697722848437	CMakeFiles/asset_agent.dir/src/inventory.cpp.obj	353fb529fcaede3a
+1893	3734	7926697741585154	CMakeFiles/asset_agent.dir/src/mini_json.cpp.obj	9b3123c76d9983d9
+1305	4831	7926697735675090	CMakeFiles/asset_agent.dir/src/http_client.cpp.obj	fcd08ca40ab8a80f
+3737	5386	7926697760019935	CMakeFiles/asset_agent.dir/src/logger.cpp.obj	8bc9644e1241d404
+5387	6074	7926697776509141	CMakeFiles/asset_server.dir/src/server_main.cpp.obj	37ce17f3eac6015d
+4836	7626	7926697770996886	CMakeFiles/asset_agent.dir/src/platform.cpp.obj	2acf4397a08f6175
+6075	8556	7926697783387018	CMakeFiles/asset_server.dir/src/http_server.cpp.obj	d9f9291d35cb5615
+7627	8751	7926697798872507	CMakeFiles/asset_server.dir/src/file_store.cpp.obj	e7e234e64837f174
+8557	9736	7926697808215317	CMakeFiles/asset_server.dir/src/inventory.cpp.obj	5e2535178c552f17
+9736	10844	7926697820003607	CMakeFiles/asset_server.dir/src/mini_json.cpp.obj	4bcdb431d88cb2d5
+8751	10997	7926697810150813	CMakeFiles/asset_server.dir/src/platform.cpp.obj	1e1982bb87199fc7
+10997	11497	7926697832591777	asset_agent.exe	71f085e8cdb5e3c3
+10845	11896	7926697831089967	CMakeFiles/asset_server.dir/src/logger.cpp.obj	e3e306fe41deabe0
